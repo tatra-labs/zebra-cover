@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zebra-cover"
+version = "0.1.0"
+description = "Zebra puzzles via LLM tool calls and an exact-cover solver (Knuth's Algorithm C, pure Python)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "tatra-labs"}]
+keywords = ["neuro-symbolic", "zebra-puzzle", "exact-cover", "dancing-links", "llm", "tool-calling", "reasoning"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+local = ["torch>=2.1", "transformers>=4.51"]
+experiments = ["matplotlib>=3.6"]
+
+[project.scripts]
+zebra-cover = "zebracover.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/tatra-labs/zebra-cover"
+
+[tool.setuptools]
+packages = ["zebracover"]

@@ -1,0 +1,28 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: gold encodings solve, end to end through the CLI
+        run: |
+          zebra-cover gold --size 5x5 --seed 0
+          zebra-cover generate --size 4x4 --seed 3
+      - name: the diagnosis reproduces from the stored replies
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          python experiments/diagnose.py > /dev/null
+          git diff --exit-code results/diagnosis.md

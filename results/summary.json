@@ -1,0 +1,167 @@
+[
+ {
+  "model": "Qwen3-0.6B",
+  "method": "plain",
+  "puzzles": 30,
+  "solved": 0,
+  "cells": 0.30592592592592593,
+  "by_size": {
+   "2x3": 0,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": 132.46666666666667,
+  "first_round_verdicts": {}
+ },
+ {
+  "model": "Qwen3-0.6B",
+  "method": "nec",
+  "puzzles": 30,
+  "solved": 0,
+  "cells": 0.0,
+  "by_size": {
+   "2x3": 0,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": null,
+  "first_round_verdicts": {
+   "none": 30
+  }
+ },
+ {
+  "model": "Qwen3-0.6B",
+  "method": "nec+feedback",
+  "puzzles": 30,
+  "solved": 0,
+  "cells": 0.0,
+  "by_size": {
+   "2x3": 0,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 4,
+  "tokens": 705.3333333333334,
+  "first_round_verdicts": {
+   "none": 30
+  }
+ },
+ {
+  "model": "Qwen3-0.6B",
+  "method": "nec-lenient",
+  "puzzles": 30,
+  "solved": 0,
+  "cells": 0.0,
+  "by_size": {
+   "2x3": 0,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": null,
+  "first_round_verdicts": {
+   "none": 30
+  }
+ },
+ {
+  "model": "Qwen3-1.7B",
+  "method": "plain",
+  "puzzles": 30,
+  "solved": 0.13333333333333333,
+  "cells": 0.4372037037037037,
+  "by_size": {
+   "2x3": 0.8,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": 1191.5666666666666,
+  "first_round_verdicts": {}
+ },
+ {
+  "model": "Qwen3-1.7B",
+  "method": "nec",
+  "puzzles": 30,
+  "solved": 0.03333333333333333,
+  "cells": 0.03333333333333333,
+  "by_size": {
+   "2x3": 0.2,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": null,
+  "first_round_verdicts": {
+   "under": 3,
+   "invalid": 24,
+   "unique": 2,
+   "over": 1
+  }
+ },
+ {
+  "model": "Qwen3-1.7B",
+  "method": "nec+feedback",
+  "puzzles": 30,
+  "solved": 0.03333333333333333,
+  "cells": 0.05555555555555555,
+  "by_size": {
+   "2x3": 0.2,
+   "3x3": 0,
+   "3x4": 0,
+   "4x4": 0,
+   "4x5": 0,
+   "5x5": 0
+  },
+  "rounds": 3.7333333333333334,
+  "tokens": 2258.366666666667,
+  "first_round_verdicts": {
+   "under": 3,
+   "invalid": 24,
+   "unique": 2,
+   "over": 1
+  }
+ },
+ {
+  "model": "Qwen3-1.7B",
+  "method": "nec-lenient",
+  "puzzles": 30,
+  "solved": 0.23333333333333334,
+  "cells": 0.28755555555555556,
+  "by_size": {
+   "2x3": 0.2,
+   "3x3": 0.4,
+   "3x4": 0.4,
+   "4x4": 0.2,
+   "4x5": 0.2,
+   "5x5": 0
+  },
+  "rounds": 1,
+  "tokens": null,
+  "first_round_verdicts": {
+   "under": 3,
+   "invalid": 24,
+   "unique": 2,
+   "over": 1
+  }
+ }
+]
